@@ -1,0 +1,21 @@
+
+
+.AppBilhete {
+    display: flex;
+    width: auto;
+    height: 620px;
+    margin-top: 50px;
+}
+
+.AppBilhete-BilheteMostra{
+    display: flex;
+    width: 450px;
+
+}
+
+.AppBilhete-CardBilhete{
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

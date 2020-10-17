@@ -1,0 +1,27 @@
+
+
+.CardBilhete {
+   display:flex;
+   flex-direction: column;
+   background-color: #ececec;
+   border: 2px solid #333333;
+   padding: 5px;
+   border-radius: 10px;
+   margin: 10px;
+}
+
+.CardBilhete:hover {
+    border: 5px solid rgba(255, 0,0,0.8);
+}
+
+.CardBilhete-titulo h3{
+    text-align: center;
+}
+
+.CardBilhete-texto{
+    margin: 10px;
+    max-width: 200px;
+    max-height: 400px;
+    display: inline;
+}
+

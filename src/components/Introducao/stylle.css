@@ -1,0 +1,17 @@
+
+
+.Introducao{
+    width: auto;
+    height: 700px;
+    background: #fdfdfd;
+    margin-top: 30px;
+}
+
+.Introducao-titulo{
+    display: flex;
+  justify-content: center;
+}
+
+.Introducao-texto{
+  margin: 10px 0 20px 20px;
+}

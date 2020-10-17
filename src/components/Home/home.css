@@ -1,0 +1,46 @@
+
+
+.home {
+   height: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-conteudo {
+    margin: 70px 0 20px 50px;
+    flex-direction: column;
+    background: #fdfdfd;
+}
+
+.home-conteudo h2 {
+margin-bottom: 10px;
+}
+.home-conteudo p {
+    width: 500px;
+    height: 300px;
+}
+
+
+
+/*IMPORTANDO IMAGENS DENTRO DO JSX
+Primeiro, envolva o src em {}
+
+Então, se estiver usando o Webpack; Ao invés de: <img src={"./logo.jpeg"} />
+
+Você pode precisar usar exigir:
+
+<img src={require('./logo.jpeg')} />
+
+Outra opção seria importar primeiro a imagem como tal:
+
+import logo from './logo.jpeg'; // with import
+
+ou ...
+
+const logo = require('./logo.jpeg); // with require
+
+depois conecte-o ...
+
+<img src={logo} />
+
+Eu recomendaria esta opção, especialmente se você estiver reutilizando a fonte da imagem.*/

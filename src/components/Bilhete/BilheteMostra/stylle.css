@@ -1,0 +1,29 @@
+
+
+.bilhete {
+    display: flex;
+    flex-direction: column;
+}
+
+.bilhete-items{
+    padding: 2px;
+    margin: 5px 0 3px 10px;
+    border: 2px solid rgba(0, 0, 0,.6);
+}
+.bilhete-items:hover{
+    border: 2px solid rgba(255, 10,10,.6);
+}
+
+.bilhete-button:hover{
+    background: rgba(255, 0,0,.2);
+}
+
+.bilhete-titulo {
+    background:url(../../../img/imagemBilhete.jpg)   ;
+    margin: 10px 0 5px 10px;
+    color: #fdfdfd;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    flex-grow: 1;
+}

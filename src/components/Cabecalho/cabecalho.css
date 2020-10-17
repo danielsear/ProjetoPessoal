@@ -1,0 +1,37 @@
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    background: url('./img/Meu-Bolso-Azul_casa-própria.jpg') no-repeat center /cover;
+    height: 700px;
+    justify-content: space-between;
+}
+
+.cabecalho-titulo {
+    display: flex;
+      margin: 0 0 200px 50px;
+      font-size: 25px;
+}
+
+.cabecalho-conteudo{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  
+}
+
+.cabecalho-conteudo_link{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 500px;
+    color: #fdfdfd;
+    text-decoration: none;
+    
+}
+
+.cabecalho-conteudo_link_ajuda{
+    position: absolute;
+    color: #ff0000;
+
+}

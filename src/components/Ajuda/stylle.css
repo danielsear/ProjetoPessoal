@@ -1,0 +1,12 @@
+
+.Ajuda {
+    background-color: rgba(200,200,200,.8);
+    padding: 20px;
+}
+
+.Ajuda h3{
+    text-align: center;
+}
+.Ajuda-p1{
+    margin: 10px 0 10px 0;
+}
