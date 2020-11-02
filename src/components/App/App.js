@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
-import './App.css';
-import Cabecalho from '../Cabecalho/Cabecalho';
-import Home from '../Home/Home';
-import AppBilhete from '../Bilhete/AppBilhete/AppBilhete';
-import Introducao from '../Introducao/Introducao';
-import Formulario from '../Formulário/Formulario';
+import React, { Component } from "react";
+import "./App.css";
+import Cabecalho from "../Cabecalho/Cabecalho";
+import Home from "../Home/Home";
+import AppBilhete from "../Bilhete/AppBilhete/AppBilhete";
+import Introducao from "../Introducao/Introducao";
+import Formulario from "../Formulário/Formulario";
 //import Perfil from '../Perfil/Perfil';
-import Ajuda from '../Ajuda/Ajuda';
+import Ajuda from "../Ajuda/Ajuda";
+//import PainelCadastro from "../PainelCadastro/PainelCadastro";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-export default class App extends Component{
- 
-  render(){
-  return (
-      <section>
+export default class App extends Component {
+  render() {
+    return (
+      <Router>
+        <section>
+          <Switch>
+            <Route exact path="/">
               <Cabecalho />
-              <Home/>
+            </Route>
+            <Route exact path="/Home">
+              <Home />
+            </Route>
+            <Route exact path="/Introducao">
               <Introducao />
-              <AppBilhete/>
-              <Formulario/>
+            </Route>
+            <Route exact path="/AppBilhete">
+              <AppBilhete />
+            </Route>
+            <Route exact path="/Formulario">
+              <Formulario />
+            </Route>
+            <Route exact path="/Ajuda">
               <Ajuda />
-      </section>
-  
-  );
+            </Route>
+          </Switch>
+        </section>
+      </Router>
+    );
   }
 }
-
-

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './stylle.css';
+import PainelCadastro from '../PainelCadastro/PainelCadastro'
 
 
 
@@ -21,8 +22,8 @@ const calcularDigito = (parteCpf, multiplicador) =>{
 
 export default class Formulario extends Component{
 
-  constructor(){
-      super();
+  constructor(props){
+      super(props);
        this.state = {
             nome:'',
             senha:'',
@@ -83,7 +84,7 @@ export default class Formulario extends Component{
         && segundoDigitoVerificador === CalculoSegundoDigito)){
         //console.log('true');
 
-         if(adcionarErro == true){
+         if(adcionarErro === true){
                 elementoErro.className =classeElementoErro;
                 elementoErro.textContent= 'Cpf inválido';
                 input.classList.add(classeInputErro);
@@ -145,7 +146,8 @@ export default class Formulario extends Component{
 
     render(){
         return(
-            <section className='Formulario'>
+            <section >
+                <div className='Formulario' >
                 <h2>Cadastro do Usuário</h2>
                 <form className='Formulario-inicio'>
                     <hr className='divider' />
@@ -202,7 +204,10 @@ export default class Formulario extends Component{
                         </div>
                     
                 </form>
+                </div>
+                <PainelCadastro  cep={this.state.cep} nome={this.state.nome} cpf={this.state.cpf} />
             </section>
+            
         );
     }
 }
